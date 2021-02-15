@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="MakeZipAndLinkExcelDoWhile" sap:VirtualizedContainerService.HintSize="886,6253" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:uascw="clr-namespace:UiPath.Activities.System.Compression.Workflow;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="MakeZipAndLinkExcelDoWhile" sap:VirtualizedContainerService.HintSize="886,6490" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:uascw="clr-namespace:UiPath.Activities.System.Compression.Workflow;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
       <x:String>System.Activities</x:String>
@@ -69,7 +69,7 @@
       <AssemblyReference>System.Management.Automation</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="761,6048" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap:VirtualizedContainerService.HintSize="793,6325" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="2" Name="i" />
       <Variable x:TypeArguments="x:Int32" Name="AllIndexCount" />
@@ -80,7 +80,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="데이터 스크래핑" sap:VirtualizedContainerService.HintSize="719,143" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <Sequence DisplayName="데이터 스크래핑" sap:VirtualizedContainerService.HintSize="751,143" sap2010:WorkflowViewState.IdRef="Sequence_11">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -92,7 +92,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,297" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,298" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Name="ExtractAllDT" />
               </Sequence.Variables>
@@ -129,15 +129,15 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:BrowserScope>
     </Sequence>
-    <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="719,5773" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+    <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="751,6050" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
       <ui:InterruptibleWhile.Body>
-        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="683,5608" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="715,5885" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="641,5516" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="673,5793" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="IsNotHasFile" />
               <Variable x:TypeArguments="x:String" Name="ZipFileName" />
@@ -148,7 +148,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 공고명" sap:VirtualizedContainerService.HintSize="599,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 공고명" sap:VirtualizedContainerService.HintSize="631,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f7fa6ebc-79ae-4cbe-84a3-d136570c3741" InformativeScreenshot="71b11869320db9c937566ec6af38a709" Selector="&lt;html title='나라장터: 국가종합전자조달' /&gt;&lt;webctrl aaname='*' parentid='resultForm' tag='A' colName='공고명' tableRow='{{i}}' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -163,7 +163,7 @@
                 <OutArgument x:TypeArguments="x:String">[ZipFileName]</OutArgument>
               </ui:GetValue.Value>
             </ui:GetValue>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 공고명" sap:VirtualizedContainerService.HintSize="599,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 공고명" sap:VirtualizedContainerService.HintSize="631,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -185,19 +185,16 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:UiElementExists DisplayName="Element Exists 첨부파일 유무" Exists="[IsNotHasFile]" sap:VirtualizedContainerService.HintSize="599,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+            <ui:UiElementExists DisplayName="Element Exists 첨부파일 유무" Exists="[IsNotHasFile]" sap:VirtualizedContainerService.HintSize="631,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2ad036e3-77f1-43a0-a314-a256738f7bcb" InformativeScreenshot="d6436e554f11ab4b344d410435794259" Selector="&lt;html title='나라장터: 국가종합전자조달' /&gt;&lt;webctrl aaname='업로드 된 파일 정보' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='첨부된 파일이 없습니다.' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2ad036e3-77f1-43a0-a314-a256738f7bcb" InformativeScreenshot="d6436e554f11ab4b344d410435794259" Selector="&lt;html title='나라장터: 국가종합전자조달' /&gt;&lt;webctrl aaname='업로드 된 파일 정보' tag='TABLE' /&gt;&lt;webctrl tag='TD' aaname='첨부된 파일이 없습니다.' /&gt;" TimeoutMS="0">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[IsNotHasFile]" sap:VirtualizedContainerService.HintSize="599,1952" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[IsNotHasFile]" sap:VirtualizedContainerService.HintSize="631,1952" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -253,17 +250,14 @@
                             </ui:CursorPosition>
                           </ui:Click.CursorPosition>
                           <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="41c3def3-d911-4220-b00c-fabf65270bb4" InformativeScreenshot="75b4c71187a6430aa768cf13b12d60f8" Selector="&lt;html title='나라장터: 국가종합전자조달' /&gt;&lt;webctrl parentid='container' tag='A' colName='파일명' tableRow='{{j}}' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="41c3def3-d911-4220-b00c-fabf65270bb4" InformativeScreenshot="75b4c71187a6430aa768cf13b12d60f8" Selector="&lt;html title='나라장터: 국가종합전자조달' /&gt;&lt;webctrl parentid='container' tag='A' colName='파일명' tableRow='{{j}}' /&gt;" TimeoutMS="0">
                               <ui:Target.WaitForReady>
                                 <InArgument x:TypeArguments="ui:WaitForReady" />
                               </ui:Target.WaitForReady>
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'drop down button  6'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click 'drop down button  6'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>
@@ -275,7 +269,7 @@
                             </ui:CursorPosition>
                           </ui:Click.CursorPosition>
                           <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d1fdb5fa-2eb6-4f83-b6cf-1ad75c491639" InformativeScreenshot="643a60d0838f8821f9e0e5c570cdae18" Selector="&lt;wnd app='iexplore.exe' cls='IEFrame' title='나라장터: 국가종합전자조달 - Internet Explorer' /&gt;&lt;wnd aaname='알림' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='저장' role='split button' /&gt;&lt;ctrl name='6' role='drop down button' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d1fdb5fa-2eb6-4f83-b6cf-1ad75c491639" InformativeScreenshot="643a60d0838f8821f9e0e5c570cdae18" Selector="&lt;wnd app='iexplore.exe' cls='IEFrame' /&gt;&lt;wnd aaname='알림' cls='DirectUIHWND' /&gt;&lt;ctrl automationid='IENotificationBar' /&gt;&lt;ctrl name='저장' role='split button' /&gt;&lt;ctrl name='6' role='drop down button' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -285,7 +279,7 @@
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu item  다른 이름으로 저장(A)'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu item  다른 이름으로 저장(A)'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>
@@ -297,7 +291,7 @@
                             </ui:CursorPosition>
                           </ui:Click.CursorPosition>
                           <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6a20b1c6-cee2-4e6c-b05b-db2a37aa9f03" InformativeScreenshot="16fbf448ffb65b7701e5326fd5a1c4a7" Selector="&lt;wnd app='iexplore.exe' cls='#32768' idx='*' /&gt;&lt;ctrl name='컨텍스트' role='popup menu' /&gt;&lt;ctrl automationid='53409' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6a20b1c6-cee2-4e6c-b05b-db2a37aa9f03" InformativeScreenshot="16fbf448ffb65b7701e5326fd5a1c4a7" Selector="&lt;wnd app='iexplore.exe' /&gt;&lt;ctrl name='컨텍스트' role='popup menu' /&gt;&lt;ctrl name='다른 이름으로 저장(A)' role='menu item' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -403,19 +397,16 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:UiElementExists DisplayName="Element Exists 첨부파일 e-발주시스템 유무" Exists="[IsHasEFile]" sap:VirtualizedContainerService.HintSize="599,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+            <ui:UiElementExists DisplayName="Element Exists 첨부파일 e-발주시스템 유무" Exists="[IsHasEFile]" sap:VirtualizedContainerService.HintSize="631,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
               <ui:UiElementExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="79ea5555-fd2b-44ff-99e8-40afe1cdee39" InformativeScreenshot="81af07785d33d89c7305da0f1467d82b" Selector="&lt;html title='나라장터: 국가종합전자조달' /&gt;&lt;webctrl idx='10' tag='H3' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="79ea5555-fd2b-44ff-99e8-40afe1cdee39" InformativeScreenshot="81af07785d33d89c7305da0f1467d82b" Selector="&lt;html title='나라장터: 국가종합전자조달' /&gt;&lt;webctrl tag='H3' aaname='[첨부 파일 (e-발주시스템)]' innertext='[첨부 파일 (e-발주시스템)]' /&gt;" TimeoutMS="0">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[Not IsHasEFile]" sap:VirtualizedContainerService.HintSize="599,1952" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[Not IsHasEFile]" sap:VirtualizedContainerService.HintSize="631,1952" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -475,17 +466,14 @@
                             </ui:CursorPosition>
                           </ui:Click.CursorPosition>
                           <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="41c3def3-d911-4220-b00c-fabf65270bb4" InformativeScreenshot="75b4c71187a6430aa768cf13b12d60f8" Selector="&lt;html title='나라장터: 국가종합전자조달' /&gt;&lt;webctrl aaname='E발주 제안요청서 파일다운로드' parentid='container' tag='A' colName='파일명' tableRow='{{j}}' /&gt;">
-                              <ui:Target.TimeoutMS>
-                                <InArgument x:TypeArguments="x:Int32" />
-                              </ui:Target.TimeoutMS>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="41c3def3-d911-4220-b00c-fabf65270bb4" InformativeScreenshot="75b4c71187a6430aa768cf13b12d60f8" Selector="&lt;html title='나라장터: 국가종합전자조달' /&gt;&lt;webctrl aaname='E발주 제안요청서 파일다운로드' parentid='container' tag='A' colName='파일명' tableRow='{{j}}' /&gt;" TimeoutMS="0">
                               <ui:Target.WaitForReady>
                                 <InArgument x:TypeArguments="ui:WaitForReady" />
                               </ui:Target.WaitForReady>
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'drop down button  6'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'drop down button  6'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>
@@ -507,7 +495,7 @@
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu item  다른 이름으로 저장(A)'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu item  다른 이름으로 저장(A)'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>
@@ -622,41 +610,52 @@
                 </Sequence>
               </If.Else>
             </If>
-            <uascw:CompressFiles CompressedFileInfo="{x:Null}" Password="{x:Null}" CodePage="Default" CompressedFileName="[Environment.CurrentDirectory + &quot;\ZipData\&quot; + ZipFileName + &quot;.zip&quot;]" CompressionLevel="Normal" DisplayName="Compress/Zip Files" sap:VirtualizedContainerService.HintSize="599,213" sap2010:WorkflowViewState.IdRef="CompressFiles_3" OverrideExistingFile="True">
-              <uascw:CompressFiles.ContentToArchive>
-                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                  <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory + "\Data")]</InArgument>
-                </scg:List>
-              </uascw:CompressFiles.ContentToArchive>
-            </uascw:CompressFiles>
-            <Assign sap:VirtualizedContainerService.HintSize="599,60" sap2010:WorkflowViewState.IdRef="Assign_12">
-              <Assign.To>
-                <OutArgument x:TypeArguments="si:FileInfo[]">[Directoryinfo]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="si:FileInfo[]">[New DirectoryInfo(Environment.CurrentDirectory + "\Data").GetFiles]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:ForEach x:TypeArguments="si:FileInfo" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="599,247" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Directoryinfo]">
-              <ui:ForEach.Body>
-                <ActivityAction x:TypeArguments="si:FileInfo">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="si:FileInfo" Name="item" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_15">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delete_3" Path="[Environment.CurrentDirectory + &quot;\Data\&quot; + item.Name]" />
-                  </Sequence>
-                </ActivityAction>
-              </ui:ForEach.Body>
-            </ui:ForEach>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="599,116" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="left" KeyModifiers="Alt" SpecialKey="True">
+            <If Condition="[not IsNotHasFile or IsHasEFile]" sap:VirtualizedContainerService.HintSize="631,839" sap2010:WorkflowViewState.IdRef="If_3">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="486,692" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uascw:CompressFiles CompressedFileInfo="{x:Null}" Password="{x:Null}" CodePage="Default" CompressedFileName="[Environment.CurrentDirectory + &quot;\ZipData\&quot; + ZipFileName + &quot;.zip&quot;]" CompressionLevel="Normal" DisplayName="Compress/Zip Files" sap:VirtualizedContainerService.HintSize="444,213" sap2010:WorkflowViewState.IdRef="CompressFiles_3" OverrideExistingFile="True">
+                    <uascw:CompressFiles.ContentToArchive>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                        <InArgument x:TypeArguments="x:String">[Path.Combine(Environment.CurrentDirectory + "\Data")]</InArgument>
+                      </scg:List>
+                    </uascw:CompressFiles.ContentToArchive>
+                  </uascw:CompressFiles>
+                  <Assign sap:VirtualizedContainerService.HintSize="444,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="si:FileInfo[]">[Directoryinfo]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="si:FileInfo[]">[New DirectoryInfo(Environment.CurrentDirectory + "\Data").GetFiles]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:ForEach x:TypeArguments="si:FileInfo" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="444,247" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Directoryinfo]">
+                    <ui:ForEach.Body>
+                      <ActivityAction x:TypeArguments="si:FileInfo">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="si:FileInfo" Name="item" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delete_3" Path="[Environment.CurrentDirectory + &quot;\Data\&quot; + item.Name]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEach.Body>
+                  </ui:ForEach>
+                </Sequence>
+              </If.Then>
+            </If>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV  container'" sap:VirtualizedContainerService.HintSize="631,154" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="left" KeyModifiers="Alt" SpecialKey="True">
               <ui:SendHotkey.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="df35e0dc-adab-4f4b-8b2c-efa44fced8e6">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="df35e0dc-adab-4f4b-8b2c-efa44fced8e6" InformativeScreenshot="909f1e77970a665a010b19d402a92c4c" Selector="&lt;html title='나라장터: 국가종합전자조달' /&gt;&lt;webctrl id='container' tag='DIV' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -666,7 +665,7 @@
                 </ui:Target>
               </ui:SendHotkey.Target>
             </ui:SendHotkey>
-            <Assign sap:VirtualizedContainerService.HintSize="599,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign sap:VirtualizedContainerService.HintSize="631,60" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
               </Assign.To>

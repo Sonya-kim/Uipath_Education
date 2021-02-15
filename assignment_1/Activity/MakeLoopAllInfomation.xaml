@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="MakeZipAndLinkExcel" this:MakeZipAndLinkExcel.in_SelectOption="용역" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="MakeZipAndLinkExcel" this:MakeZipAndLinkExcel.in_SelectOption="용역" this:MakeZipAndLinkExcel.in_SearchText="빅데이터" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_SelectOption" Type="InArgument(x:String)" />
     <x:Property Name="in_SearchText" Type="InArgument(x:String)" />
@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>886,2106</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>886,2168</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>MakeZipAndLinkExcel_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -70,7 +70,7 @@
       <AssemblyReference>System.Memory</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="MakeZipAndLinkExcel" sap:VirtualizedContainerService.HintSize="680,1901" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="MakeZipAndLinkExcel" sap:VirtualizedContainerService.HintSize="680,1963" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="http://www.g2b.go.kr/index.jsp" Name="ContryMarketplaceURL" />
     </Sequence.Variables>
@@ -79,13 +79,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser BrowserType="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" DisplayName="Open Browser 나라장터" sap:VirtualizedContainerService.HintSize="638,1809" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[ContryMarketplaceURL]">
+    <ui:OpenBrowser BrowserType="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" DisplayName="Open Browser 나라장터" sap:VirtualizedContainerService.HintSize="638,1871" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[ContryMarketplaceURL]">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,1708" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,1770" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Default="True" Name="IsHasNext" />
             </Sequence.Variables>
@@ -180,9 +180,9 @@
                     </ui:UiElementExists.Target>
                   </ui:UiElementExists>
                   <If Condition="[IsHasNext]" sap:VirtualizedContainerService.HintSize="484,207" sap2010:WorkflowViewState.IdRef="If_2">
-                    <If.Then>
+                    <If.Else>
                       <ui:Break sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Break_1" />
-                    </If.Then>
+                    </If.Else>
                   </If>
                   <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 더보기" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
                     <ui:Click.CursorPosition>
@@ -214,6 +214,7 @@
                 </Sequence>
               </ui:InterruptibleWhile.Body>
             </ui:InterruptibleWhile>
+            <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="562,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
           </Sequence>
         </ActivityAction>
       </ui:OpenBrowser.Body>
